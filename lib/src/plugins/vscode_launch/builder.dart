@@ -3,19 +3,18 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'builder.freezed.dart';
 part 'builder.g.dart';
 
-@Freezed(copyWith: true)
-class FlutterFlavorizrPlugin with _$FlutterFlavorizrPlugin {
-  const FlutterFlavorizrPlugin._();
+@freezed
+class FlutterFlavorizr with _$FlutterFlavorizr {
+  const FlutterFlavorizr._();
 
-  const factory FlutterFlavorizrPlugin({
+  const factory FlutterFlavorizr({
     required FlavorizrApp app,
     required FlavorizrAndroid android,
     required FlavorizrIos ios,
-    required FlavorizrIos macos,
-  }) = _FlutterFlavorizrPlugin;
+  }) = _FlutterFlavorizr;
 
-  factory FlutterFlavorizrPlugin.fromJson(Map<String, dynamic> json) =>
-      _$FlutterFlavorizrPluginFromJson(json);
+  factory FlutterFlavorizr.fromJson(Map<String, dynamic> json) =>
+      _$FlutterFlavorizrFromJson(json);
 }
 
 @freezed

@@ -6,23 +6,21 @@ part of 'builder.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$FlutterFlavorizrPluginImpl _$$FlutterFlavorizrPluginImplFromJson(
+_$FlutterFlavorizrImpl _$$FlutterFlavorizrImplFromJson(
         Map<String, dynamic> json) =>
-    _$FlutterFlavorizrPluginImpl(
+    _$FlutterFlavorizrImpl(
       app: FlavorizrApp.fromJson(json['app'] as Map<String, dynamic>),
       android:
           FlavorizrAndroid.fromJson(json['android'] as Map<String, dynamic>),
       ios: FlavorizrIos.fromJson(json['ios'] as Map<String, dynamic>),
-      macos: FlavorizrIos.fromJson(json['macos'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$FlutterFlavorizrPluginImplToJson(
-        _$FlutterFlavorizrPluginImpl instance) =>
+Map<String, dynamic> _$$FlutterFlavorizrImplToJson(
+        _$FlutterFlavorizrImpl instance) =>
     <String, dynamic>{
       'app': instance.app,
       'android': instance.android,
       'ios': instance.ios,
-      'macos': instance.macos,
     };
 
 _$FlavorizrAppImpl _$$FlavorizrAppImplFromJson(Map<String, dynamic> json) =>

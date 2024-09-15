@@ -1,25 +1,23 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'flavor.dart';
+part of 'flavor_builder_base.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$FlavorImpl _$$FlavorImplFromJson(Map<String, dynamic> json) => _$FlavorImpl(
+_$FlavorBuilderImpl _$$FlavorBuilderImplFromJson(Map<String, dynamic> json) =>
+    _$FlavorBuilderImpl(
       name: json['name'] as String,
-      flavorizr:
-          FlutterFlavorizr.fromJson(json['flavorizr'] as Map<String, dynamic>),
-      nativeSplash: FlutterNativeSplash.fromJson(
-          json['nativeSplash'] as Map<String, dynamic>),
+      flavorizr: FlutterFlavorizrPlugin.fromJson(
+          json['flavorizr'] as Map<String, dynamic>),
       variables: json['variables'] as Map<String, dynamic>,
       extra: json['extra'] as Map<String, dynamic>? ?? const {},
     );
 
-Map<String, dynamic> _$$FlavorImplToJson(_$FlavorImpl instance) =>
+Map<String, dynamic> _$$FlavorBuilderImplToJson(_$FlavorBuilderImpl instance) =>
     <String, dynamic>{
       'name': instance.name,
       'flavorizr': instance.flavorizr,
-      'nativeSplash': instance.nativeSplash,
       'variables': instance.variables,
     };

@@ -14,58 +14,50 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
-FlutterFlavorizrPlugin _$FlutterFlavorizrPluginFromJson(
-    Map<String, dynamic> json) {
-  return _FlutterFlavorizrPlugin.fromJson(json);
+FlutterFlavorizr _$FlutterFlavorizrFromJson(Map<String, dynamic> json) {
+  return _FlutterFlavorizr.fromJson(json);
 }
 
 /// @nodoc
-mixin _$FlutterFlavorizrPlugin {
+mixin _$FlutterFlavorizr {
   FlavorizrApp get app => throw _privateConstructorUsedError;
   FlavorizrAndroid get android => throw _privateConstructorUsedError;
   FlavorizrIos get ios => throw _privateConstructorUsedError;
-  FlavorizrIos get macos => throw _privateConstructorUsedError;
 
-  /// Serializes this FlutterFlavorizrPlugin to a JSON map.
+  /// Serializes this FlutterFlavorizr to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 
-  /// Create a copy of FlutterFlavorizrPlugin
+  /// Create a copy of FlutterFlavorizr
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $FlutterFlavorizrPluginCopyWith<FlutterFlavorizrPlugin> get copyWith =>
+  $FlutterFlavorizrCopyWith<FlutterFlavorizr> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $FlutterFlavorizrPluginCopyWith<$Res> {
-  factory $FlutterFlavorizrPluginCopyWith(FlutterFlavorizrPlugin value,
-          $Res Function(FlutterFlavorizrPlugin) then) =
-      _$FlutterFlavorizrPluginCopyWithImpl<$Res, FlutterFlavorizrPlugin>;
+abstract class $FlutterFlavorizrCopyWith<$Res> {
+  factory $FlutterFlavorizrCopyWith(
+          FlutterFlavorizr value, $Res Function(FlutterFlavorizr) then) =
+      _$FlutterFlavorizrCopyWithImpl<$Res, FlutterFlavorizr>;
   @useResult
-  $Res call(
-      {FlavorizrApp app,
-      FlavorizrAndroid android,
-      FlavorizrIos ios,
-      FlavorizrIos macos});
+  $Res call({FlavorizrApp app, FlavorizrAndroid android, FlavorizrIos ios});
 
   $FlavorizrAppCopyWith<$Res> get app;
   $FlavorizrAndroidCopyWith<$Res> get android;
   $FlavorizrIosCopyWith<$Res> get ios;
-  $FlavorizrIosCopyWith<$Res> get macos;
 }
 
 /// @nodoc
-class _$FlutterFlavorizrPluginCopyWithImpl<$Res,
-        $Val extends FlutterFlavorizrPlugin>
-    implements $FlutterFlavorizrPluginCopyWith<$Res> {
-  _$FlutterFlavorizrPluginCopyWithImpl(this._value, this._then);
+class _$FlutterFlavorizrCopyWithImpl<$Res, $Val extends FlutterFlavorizr>
+    implements $FlutterFlavorizrCopyWith<$Res> {
+  _$FlutterFlavorizrCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of FlutterFlavorizrPlugin
+  /// Create a copy of FlutterFlavorizr
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -73,7 +65,6 @@ class _$FlutterFlavorizrPluginCopyWithImpl<$Res,
     Object? app = null,
     Object? android = null,
     Object? ios = null,
-    Object? macos = null,
   }) {
     return _then(_value.copyWith(
       app: null == app
@@ -88,14 +79,10 @@ class _$FlutterFlavorizrPluginCopyWithImpl<$Res,
           ? _value.ios
           : ios // ignore: cast_nullable_to_non_nullable
               as FlavorizrIos,
-      macos: null == macos
-          ? _value.macos
-          : macos // ignore: cast_nullable_to_non_nullable
-              as FlavorizrIos,
     ) as $Val);
   }
 
-  /// Create a copy of FlutterFlavorizrPlugin
+  /// Create a copy of FlutterFlavorizr
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -105,7 +92,7 @@ class _$FlutterFlavorizrPluginCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of FlutterFlavorizrPlugin
+  /// Create a copy of FlutterFlavorizr
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -115,7 +102,7 @@ class _$FlutterFlavorizrPluginCopyWithImpl<$Res,
     });
   }
 
-  /// Create a copy of FlutterFlavorizrPlugin
+  /// Create a copy of FlutterFlavorizr
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -124,32 +111,17 @@ class _$FlutterFlavorizrPluginCopyWithImpl<$Res,
       return _then(_value.copyWith(ios: value) as $Val);
     });
   }
-
-  /// Create a copy of FlutterFlavorizrPlugin
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $FlavorizrIosCopyWith<$Res> get macos {
-    return $FlavorizrIosCopyWith<$Res>(_value.macos, (value) {
-      return _then(_value.copyWith(macos: value) as $Val);
-    });
-  }
 }
 
 /// @nodoc
-abstract class _$$FlutterFlavorizrPluginImplCopyWith<$Res>
-    implements $FlutterFlavorizrPluginCopyWith<$Res> {
-  factory _$$FlutterFlavorizrPluginImplCopyWith(
-          _$FlutterFlavorizrPluginImpl value,
-          $Res Function(_$FlutterFlavorizrPluginImpl) then) =
-      __$$FlutterFlavorizrPluginImplCopyWithImpl<$Res>;
+abstract class _$$FlutterFlavorizrImplCopyWith<$Res>
+    implements $FlutterFlavorizrCopyWith<$Res> {
+  factory _$$FlutterFlavorizrImplCopyWith(_$FlutterFlavorizrImpl value,
+          $Res Function(_$FlutterFlavorizrImpl) then) =
+      __$$FlutterFlavorizrImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {FlavorizrApp app,
-      FlavorizrAndroid android,
-      FlavorizrIos ios,
-      FlavorizrIos macos});
+  $Res call({FlavorizrApp app, FlavorizrAndroid android, FlavorizrIos ios});
 
   @override
   $FlavorizrAppCopyWith<$Res> get app;
@@ -157,21 +129,17 @@ abstract class _$$FlutterFlavorizrPluginImplCopyWith<$Res>
   $FlavorizrAndroidCopyWith<$Res> get android;
   @override
   $FlavorizrIosCopyWith<$Res> get ios;
-  @override
-  $FlavorizrIosCopyWith<$Res> get macos;
 }
 
 /// @nodoc
-class __$$FlutterFlavorizrPluginImplCopyWithImpl<$Res>
-    extends _$FlutterFlavorizrPluginCopyWithImpl<$Res,
-        _$FlutterFlavorizrPluginImpl>
-    implements _$$FlutterFlavorizrPluginImplCopyWith<$Res> {
-  __$$FlutterFlavorizrPluginImplCopyWithImpl(
-      _$FlutterFlavorizrPluginImpl _value,
-      $Res Function(_$FlutterFlavorizrPluginImpl) _then)
+class __$$FlutterFlavorizrImplCopyWithImpl<$Res>
+    extends _$FlutterFlavorizrCopyWithImpl<$Res, _$FlutterFlavorizrImpl>
+    implements _$$FlutterFlavorizrImplCopyWith<$Res> {
+  __$$FlutterFlavorizrImplCopyWithImpl(_$FlutterFlavorizrImpl _value,
+      $Res Function(_$FlutterFlavorizrImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of FlutterFlavorizrPlugin
+  /// Create a copy of FlutterFlavorizr
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -179,9 +147,8 @@ class __$$FlutterFlavorizrPluginImplCopyWithImpl<$Res>
     Object? app = null,
     Object? android = null,
     Object? ios = null,
-    Object? macos = null,
   }) {
-    return _then(_$FlutterFlavorizrPluginImpl(
+    return _then(_$FlutterFlavorizrImpl(
       app: null == app
           ? _value.app
           : app // ignore: cast_nullable_to_non_nullable
@@ -194,26 +161,19 @@ class __$$FlutterFlavorizrPluginImplCopyWithImpl<$Res>
           ? _value.ios
           : ios // ignore: cast_nullable_to_non_nullable
               as FlavorizrIos,
-      macos: null == macos
-          ? _value.macos
-          : macos // ignore: cast_nullable_to_non_nullable
-              as FlavorizrIos,
     ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$FlutterFlavorizrPluginImpl extends _FlutterFlavorizrPlugin {
-  const _$FlutterFlavorizrPluginImpl(
-      {required this.app,
-      required this.android,
-      required this.ios,
-      required this.macos})
+class _$FlutterFlavorizrImpl extends _FlutterFlavorizr {
+  const _$FlutterFlavorizrImpl(
+      {required this.app, required this.android, required this.ios})
       : super._();
 
-  factory _$FlutterFlavorizrPluginImpl.fromJson(Map<String, dynamic> json) =>
-      _$$FlutterFlavorizrPluginImplFromJson(json);
+  factory _$FlutterFlavorizrImpl.fromJson(Map<String, dynamic> json) =>
+      _$$FlutterFlavorizrImplFromJson(json);
 
   @override
   final FlavorizrApp app;
@@ -221,56 +181,52 @@ class _$FlutterFlavorizrPluginImpl extends _FlutterFlavorizrPlugin {
   final FlavorizrAndroid android;
   @override
   final FlavorizrIos ios;
-  @override
-  final FlavorizrIos macos;
 
   @override
   String toString() {
-    return 'FlutterFlavorizrPlugin(app: $app, android: $android, ios: $ios, macos: $macos)';
+    return 'FlutterFlavorizr(app: $app, android: $android, ios: $ios)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$FlutterFlavorizrPluginImpl &&
+            other is _$FlutterFlavorizrImpl &&
             (identical(other.app, app) || other.app == app) &&
             (identical(other.android, android) || other.android == android) &&
-            (identical(other.ios, ios) || other.ios == ios) &&
-            (identical(other.macos, macos) || other.macos == macos));
+            (identical(other.ios, ios) || other.ios == ios));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType, app, android, ios, macos);
+  int get hashCode => Object.hash(runtimeType, app, android, ios);
 
-  /// Create a copy of FlutterFlavorizrPlugin
+  /// Create a copy of FlutterFlavorizr
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$FlutterFlavorizrPluginImplCopyWith<_$FlutterFlavorizrPluginImpl>
-      get copyWith => __$$FlutterFlavorizrPluginImplCopyWithImpl<
-          _$FlutterFlavorizrPluginImpl>(this, _$identity);
+  _$$FlutterFlavorizrImplCopyWith<_$FlutterFlavorizrImpl> get copyWith =>
+      __$$FlutterFlavorizrImplCopyWithImpl<_$FlutterFlavorizrImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$FlutterFlavorizrPluginImplToJson(
+    return _$$FlutterFlavorizrImplToJson(
       this,
     );
   }
 }
 
-abstract class _FlutterFlavorizrPlugin extends FlutterFlavorizrPlugin {
-  const factory _FlutterFlavorizrPlugin(
+abstract class _FlutterFlavorizr extends FlutterFlavorizr {
+  const factory _FlutterFlavorizr(
       {required final FlavorizrApp app,
       required final FlavorizrAndroid android,
-      required final FlavorizrIos ios,
-      required final FlavorizrIos macos}) = _$FlutterFlavorizrPluginImpl;
-  const _FlutterFlavorizrPlugin._() : super._();
+      required final FlavorizrIos ios}) = _$FlutterFlavorizrImpl;
+  const _FlutterFlavorizr._() : super._();
 
-  factory _FlutterFlavorizrPlugin.fromJson(Map<String, dynamic> json) =
-      _$FlutterFlavorizrPluginImpl.fromJson;
+  factory _FlutterFlavorizr.fromJson(Map<String, dynamic> json) =
+      _$FlutterFlavorizrImpl.fromJson;
 
   @override
   FlavorizrApp get app;
@@ -278,15 +234,13 @@ abstract class _FlutterFlavorizrPlugin extends FlutterFlavorizrPlugin {
   FlavorizrAndroid get android;
   @override
   FlavorizrIos get ios;
-  @override
-  FlavorizrIos get macos;
 
-  /// Create a copy of FlutterFlavorizrPlugin
+  /// Create a copy of FlutterFlavorizr
   /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$FlutterFlavorizrPluginImplCopyWith<_$FlutterFlavorizrPluginImpl>
-      get copyWith => throw _privateConstructorUsedError;
+  _$$FlutterFlavorizrImplCopyWith<_$FlutterFlavorizrImpl> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 FlavorizrApp _$FlavorizrAppFromJson(Map<String, dynamic> json) {
