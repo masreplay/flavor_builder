@@ -4,13 +4,13 @@ import 'main.dart';
 
 final FlavorBuilder productionFlavor = FlavorBuilder(
   name: 'production',
-  flavorizr: FlutterFlavorizrPlugin(
-    app: const FlavorizrApp(name: 'Flutter Builder Production'),
-    android: const FlavorizrAndroid(
+  flavorizr: const FlutterFlavorizrPlugin(
+    app: FlavorizrApp(name: 'Flutter Builder Production'),
+    android: FlavorizrAndroid(
       applicationId: 'prod.android.flutter_builder.com',
       icon: logoIconPath,
     ),
-    ios: const FlavorizrIos(
+    ios: FlavorizrIos(
       bundleId: 'prod.ios.flutter_builder.com',
       icon: logoIconPath,
       variables: iosVariables,

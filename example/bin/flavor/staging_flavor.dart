@@ -4,13 +4,13 @@ import 'main.dart';
 
 final FlavorBuilder stagingFlavor = FlavorBuilder(
   name: 'staging',
-  flavorizr: FlutterFlavorizrPlugin(
-    app: const FlavorizrApp(name: 'Flutter Builder Staging'),
-    android: const FlavorizrAndroid(
+  flavorizr: const FlutterFlavorizrPlugin(
+    app: FlavorizrApp(name: 'Flutter Builder Staging'),
+    android: FlavorizrAndroid(
       applicationId: 'staging.android.flutter_builder.com',
       icon: logoIconPath,
     ),
-    ios: const FlavorizrIos(
+    ios: FlavorizrIos(
       bundleId: 'staging.ios.flutter_builder.com',
       icon: logoIconPath,
       variables: iosVariables,
