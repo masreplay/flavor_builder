@@ -14,3 +14,10 @@ To install the package, add the following to your `pubspec.yaml` file:
 dev_dependencies:
   flavor_generator: ^0.0.1
 
+
+
+
+run using
+```bash
+dart run ./bin/flavor/main.dart && dart run flutter_flavorizr
+```

@@ -18,9 +18,9 @@ _$FlutterFlavorizrImpl _$$FlutterFlavorizrImplFromJson(
 Map<String, dynamic> _$$FlutterFlavorizrImplToJson(
         _$FlutterFlavorizrImpl instance) =>
     <String, dynamic>{
-      'app': instance.app,
-      'android': instance.android,
-      'ios': instance.ios,
+      'app': instance.app.toJson(),
+      'android': instance.android.toJson(),
+      'ios': instance.ios.toJson(),
     };
 
 _$FlavorizrAppImpl _$$FlavorizrAppImplFromJson(Map<String, dynamic> json) =>
@@ -61,7 +61,7 @@ Map<String, dynamic> _$$FlavorizrIosImplToJson(_$FlavorizrIosImpl instance) =>
     <String, dynamic>{
       'bundleId': instance.bundleId,
       'icon': instance.icon,
-      'variables': instance.variables,
+      'variables': instance.variables.map((k, e) => MapEntry(k, e.toJson())),
     };
 
 _$FlavorizrIosVariableImpl _$$FlavorizrIosVariableImplFromJson(

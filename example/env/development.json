@@ -1,0 +1,6 @@
+{
+  "BASE_URL": "http://dev.flutter_builder.com",
+  "PASSWORD": "password",
+  "USERNAME": "user@example.com",
+  "IS_DEVELOPMENT": true
+}

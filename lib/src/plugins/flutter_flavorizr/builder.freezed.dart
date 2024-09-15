@@ -22,9 +22,47 @@ FlutterFlavorizrPlugin _$FlutterFlavorizrPluginFromJson(
 /// @nodoc
 mixin _$FlutterFlavorizrPlugin {
   FlavorizrApp get app => throw _privateConstructorUsedError;
-  FlavorizrAndroid get android => throw _privateConstructorUsedError;
-  FlavorizrIos get ios => throw _privateConstructorUsedError;
-  FlavorizrIos get macos => throw _privateConstructorUsedError;
+  FlavorizrAndroid? get android => throw _privateConstructorUsedError;
+  FlavorizrIos? get ios => throw _privateConstructorUsedError;
+  FlavorizrIos? get macos => throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(FlavorizrApp app, FlavorizrAndroid? android,
+            FlavorizrIos? ios, FlavorizrIos? macos)
+        $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(FlavorizrApp app, FlavorizrAndroid? android,
+            FlavorizrIos? ios, FlavorizrIos? macos)?
+        $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(FlavorizrApp app, FlavorizrAndroid? android,
+            FlavorizrIos? ios, FlavorizrIos? macos)?
+        $default, {
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_FlutterFlavorizrPlugin value) $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_FlutterFlavorizrPlugin value)? $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_FlutterFlavorizrPlugin value)? $default, {
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
 
   /// Serializes this FlutterFlavorizrPlugin to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -44,14 +82,14 @@ abstract class $FlutterFlavorizrPluginCopyWith<$Res> {
   @useResult
   $Res call(
       {FlavorizrApp app,
-      FlavorizrAndroid android,
-      FlavorizrIos ios,
-      FlavorizrIos macos});
+      FlavorizrAndroid? android,
+      FlavorizrIos? ios,
+      FlavorizrIos? macos});
 
   $FlavorizrAppCopyWith<$Res> get app;
-  $FlavorizrAndroidCopyWith<$Res> get android;
-  $FlavorizrIosCopyWith<$Res> get ios;
-  $FlavorizrIosCopyWith<$Res> get macos;
+  $FlavorizrAndroidCopyWith<$Res>? get android;
+  $FlavorizrIosCopyWith<$Res>? get ios;
+  $FlavorizrIosCopyWith<$Res>? get macos;
 }
 
 /// @nodoc
@@ -71,27 +109,27 @@ class _$FlutterFlavorizrPluginCopyWithImpl<$Res,
   @override
   $Res call({
     Object? app = null,
-    Object? android = null,
-    Object? ios = null,
-    Object? macos = null,
+    Object? android = freezed,
+    Object? ios = freezed,
+    Object? macos = freezed,
   }) {
     return _then(_value.copyWith(
       app: null == app
           ? _value.app
           : app // ignore: cast_nullable_to_non_nullable
               as FlavorizrApp,
-      android: null == android
+      android: freezed == android
           ? _value.android
           : android // ignore: cast_nullable_to_non_nullable
-              as FlavorizrAndroid,
-      ios: null == ios
+              as FlavorizrAndroid?,
+      ios: freezed == ios
           ? _value.ios
           : ios // ignore: cast_nullable_to_non_nullable
-              as FlavorizrIos,
-      macos: null == macos
+              as FlavorizrIos?,
+      macos: freezed == macos
           ? _value.macos
           : macos // ignore: cast_nullable_to_non_nullable
-              as FlavorizrIos,
+              as FlavorizrIos?,
     ) as $Val);
   }
 
@@ -109,8 +147,12 @@ class _$FlutterFlavorizrPluginCopyWithImpl<$Res,
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  $FlavorizrAndroidCopyWith<$Res> get android {
-    return $FlavorizrAndroidCopyWith<$Res>(_value.android, (value) {
+  $FlavorizrAndroidCopyWith<$Res>? get android {
+    if (_value.android == null) {
+      return null;
+    }
+
+    return $FlavorizrAndroidCopyWith<$Res>(_value.android!, (value) {
       return _then(_value.copyWith(android: value) as $Val);
     });
   }
@@ -119,8 +161,12 @@ class _$FlutterFlavorizrPluginCopyWithImpl<$Res,
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  $FlavorizrIosCopyWith<$Res> get ios {
-    return $FlavorizrIosCopyWith<$Res>(_value.ios, (value) {
+  $FlavorizrIosCopyWith<$Res>? get ios {
+    if (_value.ios == null) {
+      return null;
+    }
+
+    return $FlavorizrIosCopyWith<$Res>(_value.ios!, (value) {
       return _then(_value.copyWith(ios: value) as $Val);
     });
   }
@@ -129,8 +175,12 @@ class _$FlutterFlavorizrPluginCopyWithImpl<$Res,
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  $FlavorizrIosCopyWith<$Res> get macos {
-    return $FlavorizrIosCopyWith<$Res>(_value.macos, (value) {
+  $FlavorizrIosCopyWith<$Res>? get macos {
+    if (_value.macos == null) {
+      return null;
+    }
+
+    return $FlavorizrIosCopyWith<$Res>(_value.macos!, (value) {
       return _then(_value.copyWith(macos: value) as $Val);
     });
   }
@@ -147,18 +197,18 @@ abstract class _$$FlutterFlavorizrPluginImplCopyWith<$Res>
   @useResult
   $Res call(
       {FlavorizrApp app,
-      FlavorizrAndroid android,
-      FlavorizrIos ios,
-      FlavorizrIos macos});
+      FlavorizrAndroid? android,
+      FlavorizrIos? ios,
+      FlavorizrIos? macos});
 
   @override
   $FlavorizrAppCopyWith<$Res> get app;
   @override
-  $FlavorizrAndroidCopyWith<$Res> get android;
+  $FlavorizrAndroidCopyWith<$Res>? get android;
   @override
-  $FlavorizrIosCopyWith<$Res> get ios;
+  $FlavorizrIosCopyWith<$Res>? get ios;
   @override
-  $FlavorizrIosCopyWith<$Res> get macos;
+  $FlavorizrIosCopyWith<$Res>? get macos;
 }
 
 /// @nodoc
@@ -177,39 +227,37 @@ class __$$FlutterFlavorizrPluginImplCopyWithImpl<$Res>
   @override
   $Res call({
     Object? app = null,
-    Object? android = null,
-    Object? ios = null,
-    Object? macos = null,
+    Object? android = freezed,
+    Object? ios = freezed,
+    Object? macos = freezed,
   }) {
     return _then(_$FlutterFlavorizrPluginImpl(
       app: null == app
           ? _value.app
           : app // ignore: cast_nullable_to_non_nullable
               as FlavorizrApp,
-      android: null == android
+      android: freezed == android
           ? _value.android
           : android // ignore: cast_nullable_to_non_nullable
-              as FlavorizrAndroid,
-      ios: null == ios
+              as FlavorizrAndroid?,
+      ios: freezed == ios
           ? _value.ios
           : ios // ignore: cast_nullable_to_non_nullable
-              as FlavorizrIos,
-      macos: null == macos
+              as FlavorizrIos?,
+      macos: freezed == macos
           ? _value.macos
           : macos // ignore: cast_nullable_to_non_nullable
-              as FlavorizrIos,
+              as FlavorizrIos?,
     ));
   }
 }
 
 /// @nodoc
-@JsonSerializable()
+
+@JsonSerializable(includeIfNull: false)
 class _$FlutterFlavorizrPluginImpl extends _FlutterFlavorizrPlugin {
   const _$FlutterFlavorizrPluginImpl(
-      {required this.app,
-      required this.android,
-      required this.ios,
-      required this.macos})
+      {required this.app, this.android, this.ios, this.macos})
       : super._();
 
   factory _$FlutterFlavorizrPluginImpl.fromJson(Map<String, dynamic> json) =>
@@ -218,11 +266,11 @@ class _$FlutterFlavorizrPluginImpl extends _FlutterFlavorizrPlugin {
   @override
   final FlavorizrApp app;
   @override
-  final FlavorizrAndroid android;
+  final FlavorizrAndroid? android;
   @override
-  final FlavorizrIos ios;
+  final FlavorizrIos? ios;
   @override
-  final FlavorizrIos macos;
+  final FlavorizrIos? macos;
 
   @override
   String toString() {
@@ -254,6 +302,68 @@ class _$FlutterFlavorizrPluginImpl extends _FlutterFlavorizrPlugin {
           _$FlutterFlavorizrPluginImpl>(this, _$identity);
 
   @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(FlavorizrApp app, FlavorizrAndroid? android,
+            FlavorizrIos? ios, FlavorizrIos? macos)
+        $default,
+  ) {
+    return $default(app, android, ios, macos);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(FlavorizrApp app, FlavorizrAndroid? android,
+            FlavorizrIos? ios, FlavorizrIos? macos)?
+        $default,
+  ) {
+    return $default?.call(app, android, ios, macos);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(FlavorizrApp app, FlavorizrAndroid? android,
+            FlavorizrIos? ios, FlavorizrIos? macos)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    if ($default != null) {
+      return $default(app, android, ios, macos);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_FlutterFlavorizrPlugin value) $default,
+  ) {
+    return $default(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_FlutterFlavorizrPlugin value)? $default,
+  ) {
+    return $default?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_FlutterFlavorizrPlugin value)? $default, {
+    required TResult orElse(),
+  }) {
+    if ($default != null) {
+      return $default(this);
+    }
+    return orElse();
+  }
+
+  @override
   Map<String, dynamic> toJson() {
     return _$$FlutterFlavorizrPluginImplToJson(
       this,
@@ -264,9 +374,9 @@ class _$FlutterFlavorizrPluginImpl extends _FlutterFlavorizrPlugin {
 abstract class _FlutterFlavorizrPlugin extends FlutterFlavorizrPlugin {
   const factory _FlutterFlavorizrPlugin(
       {required final FlavorizrApp app,
-      required final FlavorizrAndroid android,
-      required final FlavorizrIos ios,
-      required final FlavorizrIos macos}) = _$FlutterFlavorizrPluginImpl;
+      final FlavorizrAndroid? android,
+      final FlavorizrIos? ios,
+      final FlavorizrIos? macos}) = _$FlutterFlavorizrPluginImpl;
   const _FlutterFlavorizrPlugin._() : super._();
 
   factory _FlutterFlavorizrPlugin.fromJson(Map<String, dynamic> json) =
@@ -275,11 +385,11 @@ abstract class _FlutterFlavorizrPlugin extends FlutterFlavorizrPlugin {
   @override
   FlavorizrApp get app;
   @override
-  FlavorizrAndroid get android;
+  FlavorizrAndroid? get android;
   @override
-  FlavorizrIos get ios;
+  FlavorizrIos? get ios;
   @override
-  FlavorizrIos get macos;
+  FlavorizrIos? get macos;
 
   /// Create a copy of FlutterFlavorizrPlugin
   /// with the given fields replaced by the non-null parameter values.
@@ -296,6 +406,38 @@ FlavorizrApp _$FlavorizrAppFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$FlavorizrApp {
   String get name => throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(String name) $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String name)? $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String name)? $default, {
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_FlavorizrApp value) $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_FlavorizrApp value)? $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_FlavorizrApp value)? $default, {
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
 
   /// Serializes this FlavorizrApp to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -414,6 +556,62 @@ class _$FlavorizrAppImpl extends _FlavorizrApp {
       __$$FlavorizrAppImplCopyWithImpl<_$FlavorizrAppImpl>(this, _$identity);
 
   @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(String name) $default,
+  ) {
+    return $default(name);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String name)? $default,
+  ) {
+    return $default?.call(name);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String name)? $default, {
+    required TResult orElse(),
+  }) {
+    if ($default != null) {
+      return $default(name);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_FlavorizrApp value) $default,
+  ) {
+    return $default(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_FlavorizrApp value)? $default,
+  ) {
+    return $default?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_FlavorizrApp value)? $default, {
+    required TResult orElse(),
+  }) {
+    if ($default != null) {
+      return $default(this);
+    }
+    return orElse();
+  }
+
+  @override
   Map<String, dynamic> toJson() {
     return _$$FlavorizrAppImplToJson(
       this,
@@ -448,6 +646,38 @@ FlavorizrAndroid _$FlavorizrAndroidFromJson(Map<String, dynamic> json) {
 mixin _$FlavorizrAndroid {
   String get applicationId => throw _privateConstructorUsedError;
   String get icon => throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(String applicationId, String icon) $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String applicationId, String icon)? $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String applicationId, String icon)? $default, {
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_FlavorizrAndroid value) $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_FlavorizrAndroid value)? $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_FlavorizrAndroid value)? $default, {
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
 
   /// Serializes this FlavorizrAndroid to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -583,6 +813,62 @@ class _$FlavorizrAndroidImpl extends _FlavorizrAndroid {
           this, _$identity);
 
   @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(String applicationId, String icon) $default,
+  ) {
+    return $default(applicationId, icon);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String applicationId, String icon)? $default,
+  ) {
+    return $default?.call(applicationId, icon);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String applicationId, String icon)? $default, {
+    required TResult orElse(),
+  }) {
+    if ($default != null) {
+      return $default(applicationId, icon);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_FlavorizrAndroid value) $default,
+  ) {
+    return $default(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_FlavorizrAndroid value)? $default,
+  ) {
+    return $default?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_FlavorizrAndroid value)? $default, {
+    required TResult orElse(),
+  }) {
+    if ($default != null) {
+      return $default(this);
+    }
+    return orElse();
+  }
+
+  @override
   Map<String, dynamic> toJson() {
     return _$$FlavorizrAndroidImplToJson(
       this,
@@ -621,6 +907,44 @@ mixin _$FlavorizrIos {
   String get bundleId => throw _privateConstructorUsedError;
   String get icon => throw _privateConstructorUsedError;
   Map<String, FlavorizrIosVariable> get variables =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(String bundleId, String icon,
+            Map<String, FlavorizrIosVariable> variables)
+        $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String bundleId, String icon,
+            Map<String, FlavorizrIosVariable> variables)?
+        $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String bundleId, String icon,
+            Map<String, FlavorizrIosVariable> variables)?
+        $default, {
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_FlavorizrIos value) $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_FlavorizrIos value)? $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_FlavorizrIos value)? $default, {
+    required TResult orElse(),
+  }) =>
       throw _privateConstructorUsedError;
 
   /// Serializes this FlavorizrIos to a JSON map.
@@ -785,6 +1109,68 @@ class _$FlavorizrIosImpl extends _FlavorizrIos {
       __$$FlavorizrIosImplCopyWithImpl<_$FlavorizrIosImpl>(this, _$identity);
 
   @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(String bundleId, String icon,
+            Map<String, FlavorizrIosVariable> variables)
+        $default,
+  ) {
+    return $default(bundleId, icon, variables);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String bundleId, String icon,
+            Map<String, FlavorizrIosVariable> variables)?
+        $default,
+  ) {
+    return $default?.call(bundleId, icon, variables);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String bundleId, String icon,
+            Map<String, FlavorizrIosVariable> variables)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    if ($default != null) {
+      return $default(bundleId, icon, variables);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_FlavorizrIos value) $default,
+  ) {
+    return $default(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_FlavorizrIos value)? $default,
+  ) {
+    return $default?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_FlavorizrIos value)? $default, {
+    required TResult orElse(),
+  }) {
+    if ($default != null) {
+      return $default(this);
+    }
+    return orElse();
+  }
+
+  @override
   Map<String, dynamic> toJson() {
     return _$$FlavorizrIosImplToJson(
       this,
@@ -825,6 +1211,38 @@ FlavorizrIosVariable _$FlavorizrIosVariableFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$FlavorizrIosVariable {
   String get value => throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(String value) $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String value)? $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String value)? $default, {
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_FlavorizrIosVariable value) $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_FlavorizrIosVariable value)? $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_FlavorizrIosVariable value)? $default, {
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
 
   /// Serializes this FlavorizrIosVariable to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -944,6 +1362,62 @@ class _$FlavorizrIosVariableImpl extends _FlavorizrIosVariable {
       get copyWith =>
           __$$FlavorizrIosVariableImplCopyWithImpl<_$FlavorizrIosVariableImpl>(
               this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(String value) $default,
+  ) {
+    return $default(value);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(String value)? $default,
+  ) {
+    return $default?.call(value);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(String value)? $default, {
+    required TResult orElse(),
+  }) {
+    if ($default != null) {
+      return $default(value);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_FlavorizrIosVariable value) $default,
+  ) {
+    return $default(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_FlavorizrIosVariable value)? $default,
+  ) {
+    return $default?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_FlavorizrIosVariable value)? $default, {
+    required TResult orElse(),
+  }) {
+    if ($default != null) {
+      return $default(this);
+    }
+    return orElse();
+  }
 
   @override
   Map<String, dynamic> toJson() {

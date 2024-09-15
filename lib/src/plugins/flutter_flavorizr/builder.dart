@@ -7,11 +7,12 @@ part 'builder.g.dart';
 class FlutterFlavorizrPlugin with _$FlutterFlavorizrPlugin {
   const FlutterFlavorizrPlugin._();
 
+  @JsonSerializable(includeIfNull: false)
   const factory FlutterFlavorizrPlugin({
     required FlavorizrApp app,
-    required FlavorizrAndroid android,
-    required FlavorizrIos ios,
-    required FlavorizrIos macos,
+    FlavorizrAndroid? android,
+    FlavorizrIos? ios,
+    FlavorizrIos? macos,
   }) = _FlutterFlavorizrPlugin;
 
   factory FlutterFlavorizrPlugin.fromJson(Map<String, dynamic> json) =>

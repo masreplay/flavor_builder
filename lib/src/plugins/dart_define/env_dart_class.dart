@@ -26,17 +26,17 @@ String generate({
         String _ => _dartStaticConstVariable(
             type: 'String',
             name: variableName,
-            value: "String.fromEnvironment('$key');",
+            value: "String.fromEnvironment('$key')",
           ),
         bool _ => _dartStaticConstVariable(
             type: 'bool',
             name: variableName,
-            value: "bool.fromEnvironment('$key', defaultValue: false);",
+            value: "bool.fromEnvironment('$key', defaultValue: false)",
           ),
         int _ => _dartStaticConstVariable(
             type: 'int',
             name: variableName,
-            value: "int.fromEnvironment('$key', defaultValue: 0);",
+            value: "int.fromEnvironment('$key', defaultValue: 0)",
           ),
         _ => throw Exception('Unsupported type: ${entry.value.runtimeType}'),
       },

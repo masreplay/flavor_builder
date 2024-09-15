@@ -10,20 +10,34 @@ _$FlutterFlavorizrPluginImpl _$$FlutterFlavorizrPluginImplFromJson(
         Map<String, dynamic> json) =>
     _$FlutterFlavorizrPluginImpl(
       app: FlavorizrApp.fromJson(json['app'] as Map<String, dynamic>),
-      android:
-          FlavorizrAndroid.fromJson(json['android'] as Map<String, dynamic>),
-      ios: FlavorizrIos.fromJson(json['ios'] as Map<String, dynamic>),
-      macos: FlavorizrIos.fromJson(json['macos'] as Map<String, dynamic>),
+      android: json['android'] == null
+          ? null
+          : FlavorizrAndroid.fromJson(json['android'] as Map<String, dynamic>),
+      ios: json['ios'] == null
+          ? null
+          : FlavorizrIos.fromJson(json['ios'] as Map<String, dynamic>),
+      macos: json['macos'] == null
+          ? null
+          : FlavorizrIos.fromJson(json['macos'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$FlutterFlavorizrPluginImplToJson(
-        _$FlutterFlavorizrPluginImpl instance) =>
-    <String, dynamic>{
-      'app': instance.app,
-      'android': instance.android,
-      'ios': instance.ios,
-      'macos': instance.macos,
-    };
+    _$FlutterFlavorizrPluginImpl instance) {
+  final val = <String, dynamic>{
+    'app': instance.app.toJson(),
+  };
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('android', instance.android?.toJson());
+  writeNotNull('ios', instance.ios?.toJson());
+  writeNotNull('macos', instance.macos?.toJson());
+  return val;
+}
 
 _$FlavorizrAppImpl _$$FlavorizrAppImplFromJson(Map<String, dynamic> json) =>
     _$FlavorizrAppImpl(
@@ -63,7 +77,7 @@ Map<String, dynamic> _$$FlavorizrIosImplToJson(_$FlavorizrIosImpl instance) =>
     <String, dynamic>{
       'bundleId': instance.bundleId,
       'icon': instance.icon,
-      'variables': instance.variables,
+      'variables': instance.variables.map((k, e) => MapEntry(k, e.toJson())),
     };
 
 _$FlavorizrIosVariableImpl _$$FlavorizrIosVariableImplFromJson(

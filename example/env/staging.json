@@ -1,0 +1,6 @@
+{
+  "BASE_URL": "http://staging.flutter_builder.com",
+  "PASSWORD": "password",
+  "USERNAME": "user@example.com",
+  "IS_STAGING": true
+}

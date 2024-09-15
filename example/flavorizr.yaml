@@ -1,0 +1,48 @@
+flavors:
+  production:
+    app:
+      name: Flutter Builder Production
+    android:
+      applicationId: prod.android.flutter_builder.com
+      icon: assets/images/logo/logo.png
+    ios:
+      bundleId: prod.ios.flutter_builder.com
+      icon: assets/images/logo/logo.png
+      variables:
+        FLUTTER_TARGET:
+          value: lib/main.dart
+  staging:
+    app:
+      name: Flutter Builder Staging
+    android:
+      applicationId: staging.android.flutter_builder.com
+      icon: assets/images/logo/logo.png
+    ios:
+      bundleId: staging.ios.flutter_builder.com
+      icon: assets/images/logo/logo.png
+      variables:
+        FLUTTER_TARGET:
+          value: lib/main.dart
+  development:
+    app:
+      name: Flutter Builder Development
+    android:
+      applicationId: dev.android.flutter_builder.com
+      icon: assets/images/logo/logo.png
+    ios:
+      bundleId: dev.ios.flutter_builder.com
+      icon: assets/images/logo/logo.png
+      variables:
+        FLUTTER_TARGET:
+          value: lib/main.dart
+instructions:
+  - assets:download
+  - assets:extract
+  - android:buildGradle
+  - android:icons
+  - ios:xcconfig
+  - ios:buildTargets
+  - ios:schema
+  - ios:plist
+  - ios:icons
+  - assets:clean

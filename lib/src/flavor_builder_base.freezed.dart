@@ -26,6 +26,53 @@ mixin _$FlavorBuilder {
   Map<String, dynamic> get variables => throw _privateConstructorUsedError;
   @JsonKey(includeToJson: false)
   Map<String, dynamic> get extra => throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            String name,
+            flutter_flavorizr.FlutterFlavorizrPlugin flavorizr,
+            Map<String, dynamic> variables,
+            @JsonKey(includeToJson: false) Map<String, dynamic> extra)
+        $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            String name,
+            flutter_flavorizr.FlutterFlavorizrPlugin flavorizr,
+            Map<String, dynamic> variables,
+            @JsonKey(includeToJson: false) Map<String, dynamic> extra)?
+        $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            String name,
+            flutter_flavorizr.FlutterFlavorizrPlugin flavorizr,
+            Map<String, dynamic> variables,
+            @JsonKey(includeToJson: false) Map<String, dynamic> extra)?
+        $default, {
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_FlavorBuilder value) $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_FlavorBuilder value)? $default,
+  ) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_FlavorBuilder value)? $default, {
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
 
   /// Serializes this FlavorBuilder to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -94,6 +141,77 @@ class _$FlavorBuilderImpl extends _FlavorBuilder {
       flavorizr,
       const DeepCollectionEquality().hash(_variables),
       const DeepCollectionEquality().hash(_extra));
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            String name,
+            flutter_flavorizr.FlutterFlavorizrPlugin flavorizr,
+            Map<String, dynamic> variables,
+            @JsonKey(includeToJson: false) Map<String, dynamic> extra)
+        $default,
+  ) {
+    return $default(name, flavorizr, variables, extra);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            String name,
+            flutter_flavorizr.FlutterFlavorizrPlugin flavorizr,
+            Map<String, dynamic> variables,
+            @JsonKey(includeToJson: false) Map<String, dynamic> extra)?
+        $default,
+  ) {
+    return $default?.call(name, flavorizr, variables, extra);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            String name,
+            flutter_flavorizr.FlutterFlavorizrPlugin flavorizr,
+            Map<String, dynamic> variables,
+            @JsonKey(includeToJson: false) Map<String, dynamic> extra)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    if ($default != null) {
+      return $default(name, flavorizr, variables, extra);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_FlavorBuilder value) $default,
+  ) {
+    return $default(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_FlavorBuilder value)? $default,
+  ) {
+    return $default?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_FlavorBuilder value)? $default, {
+    required TResult orElse(),
+  }) {
+    if ($default != null) {
+      return $default(this);
+    }
+    return orElse();
+  }
 
   @override
   Map<String, dynamic> toJson() {

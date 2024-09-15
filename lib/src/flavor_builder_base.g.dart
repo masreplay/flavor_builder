@@ -18,6 +18,6 @@ _$FlavorBuilderImpl _$$FlavorBuilderImplFromJson(Map<String, dynamic> json) =>
 Map<String, dynamic> _$$FlavorBuilderImplToJson(_$FlavorBuilderImpl instance) =>
     <String, dynamic>{
       'name': instance.name,
-      'flavorizr': instance.flavorizr,
+      'flavorizr': instance.flavorizr.toJson(),
       'variables': instance.variables,
     };
