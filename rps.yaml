@@ -1,2 +1,9 @@
 scripts:
   get: fvm flutter pub get
+
+  g: fvm dart run build_runner build --delete-conflicting-outputs
+  w: fvm dart run build_runner watch --delete-conflicting-outputs
+
+  publish:
+    $script: fvm flutter pub publish
+    $description: Publish package

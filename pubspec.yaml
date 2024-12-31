@@ -24,11 +24,3 @@ dev_dependencies:
   build_runner: ^2.4.9
   freezed: ^2.5.2
   json_serializable: ^6.8.0
-
-scripts:
-  g: fvm dart run build_runner build --delete-conflicting-outputs
-  w: fvm dart run build_runner watch --delete-conflicting-outputs
-
-  p:
-    $script: fvm flutter pub publish
-    $description: Publish package
