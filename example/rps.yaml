@@ -1,2 +1,3 @@
 scripts:
   get: fvm flutter pub get
+  flavor: dart run bin/main.dart
