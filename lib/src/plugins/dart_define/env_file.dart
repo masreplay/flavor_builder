@@ -27,7 +27,13 @@ Future<void> write(
   List<FlavorBuilder> flavor, {
   final Directory? dir,
 }) async {
+  final dir_ = dir?.path ?? './env';
+
+  if (!Directory(dir_).existsSync()) {
+    Directory(dir_).createSync(recursive: true);
+  }
+
   for (var f in flavor) {
-    await _writeOne(f, dirPath: dir?.path ?? './env');
+    await _writeOne(f, dirPath: dir_);
   }
 }

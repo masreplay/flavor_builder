@@ -30,7 +30,6 @@ class FlavorBuilder with _$FlavorBuilder {
 
 Future<void> write({
   required List<FlavorBuilder> flavors,
-  String? envDartPath,
 }) async {
   await dart_define.write(flavors);
   await flutter_flavorizr.write(flavors);
