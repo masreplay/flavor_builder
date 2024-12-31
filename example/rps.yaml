@@ -1,3 +1,4 @@
 scripts:
   get: fvm flutter pub get
-  flavor: dart run bin/main.dart
+  flavor: fvm dart run bin/flavor/main.dart
+  g: fvm flutter pub run build_runner build --delete-conflicting-outputs
