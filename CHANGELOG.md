@@ -13,3 +13,7 @@
 ## 0.0.4
 
 * fix bugs
+
+## 0.1.0
+
+* Downgrade flutter version to `3.13.9`
