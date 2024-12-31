@@ -3,7 +3,7 @@ import 'dart:io';
 // ignore: depend_on_referenced_packages
 import 'package:flavor_builder/flavor_builder.dart';
 
-import 'firebase.dart';
+import 'firebase_config.dart';
 
 typedef FlavorFlutterFireConfigure = ({
   FlutterFireConfigure flutterFireConfigure,
