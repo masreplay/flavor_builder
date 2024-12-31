@@ -1,6 +1,6 @@
 name: flavor_builder
 description: "Generate any file related to flavors in flutter"
-version: 0.1.0
+version: 0.1.3
 homepage: https://github.com/masreplay/flavor_builder
 repository: https://github.com/masreplay/flavor_builder
 issue_tracker: https://github.com/masreplay/flavor_builder/issues

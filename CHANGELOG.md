@@ -17,3 +17,7 @@
 ## 0.1.0
 
 * Downgrade flutter version to `3.13.9`
+
+## 0.1.3
+
+* Fix env file generation
