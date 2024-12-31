@@ -73,8 +73,6 @@ mixin _$FlavorBuilder {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
-
-  /// Serializes this FlavorBuilder to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 }
 
@@ -133,7 +131,7 @@ class _$FlavorBuilderImpl extends _FlavorBuilder {
             const DeepCollectionEquality().equals(other._extra, _extra));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,

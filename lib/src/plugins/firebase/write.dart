@@ -13,6 +13,7 @@ typedef FlavorFlutterFireConfigure = ({
 Future<FlavorFlutterFireConfigure> writeFlutterFireConfigure({
   required FlavorBuilder flavor,
   required String firebaseProject,
+  required String token,
   String scriptsOutDir = 'scripts/firebase_config',
 }) async {
   final name = flavor.name;
@@ -25,7 +26,7 @@ Future<FlavorFlutterFireConfigure> writeFlutterFireConfigure({
     androidOut: 'android/app/src/$name',
     iosOut: 'ios/Runner/$name',
     yes: true,
-    token: firebaseToken,
+    token: token,
     iosBuildConfig: 'Debug',
     overwriteFirebaseOptions: true,
   );

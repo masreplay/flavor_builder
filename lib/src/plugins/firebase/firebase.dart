@@ -179,5 +179,3 @@ String gen(FlutterFireConfigure config) {
 
   return command;
 }
-
-const String firebaseToken = '1//09Hl9keIxewcbCgYIARAAGAkSNwF-L9Ir9Fz9SmOWF1aIQncV8dZnwekTUKN-aFt0rsinAngFV-DP6NrYM1YkMBe4W2KG06DHPNM';

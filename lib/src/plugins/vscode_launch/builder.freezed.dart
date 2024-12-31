@@ -61,13 +61,8 @@ mixin _$FlutterFlavorizr {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
-
-  /// Serializes this FlutterFlavorizr to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of FlutterFlavorizr
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $FlutterFlavorizrCopyWith<FlutterFlavorizr> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -95,8 +90,6 @@ class _$FlutterFlavorizrCopyWithImpl<$Res, $Val extends FlutterFlavorizr>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of FlutterFlavorizr
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -120,8 +113,6 @@ class _$FlutterFlavorizrCopyWithImpl<$Res, $Val extends FlutterFlavorizr>
     ) as $Val);
   }
 
-  /// Create a copy of FlutterFlavorizr
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FlavorizrAppCopyWith<$Res> get app {
@@ -130,8 +121,6 @@ class _$FlutterFlavorizrCopyWithImpl<$Res, $Val extends FlutterFlavorizr>
     });
   }
 
-  /// Create a copy of FlutterFlavorizr
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FlavorizrAndroidCopyWith<$Res> get android {
@@ -140,8 +129,6 @@ class _$FlutterFlavorizrCopyWithImpl<$Res, $Val extends FlutterFlavorizr>
     });
   }
 
-  /// Create a copy of FlutterFlavorizr
-  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $FlavorizrIosCopyWith<$Res> get ios {
@@ -177,8 +164,6 @@ class __$$FlutterFlavorizrImplCopyWithImpl<$Res>
       $Res Function(_$FlutterFlavorizrImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of FlutterFlavorizr
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -235,13 +220,11 @@ class _$FlutterFlavorizrImpl extends _FlutterFlavorizr {
             (identical(other.ios, ios) || other.ios == ios));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, app, android, ios);
 
-  /// Create a copy of FlutterFlavorizr
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$FlutterFlavorizrImplCopyWith<_$FlutterFlavorizrImpl> get copyWith =>
@@ -334,11 +317,8 @@ abstract class _FlutterFlavorizr extends FlutterFlavorizr {
   FlavorizrAndroid get android;
   @override
   FlavorizrIos get ios;
-
-  /// Create a copy of FlutterFlavorizr
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$FlutterFlavorizrImplCopyWith<_$FlutterFlavorizrImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -382,13 +362,8 @@ mixin _$FlavorizrApp {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
-
-  /// Serializes this FlavorizrApp to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of FlavorizrApp
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $FlavorizrAppCopyWith<FlavorizrApp> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -412,8 +387,6 @@ class _$FlavorizrAppCopyWithImpl<$Res, $Val extends FlavorizrApp>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of FlavorizrApp
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -447,8 +420,6 @@ class __$$FlavorizrAppImplCopyWithImpl<$Res>
       _$FlavorizrAppImpl _value, $Res Function(_$FlavorizrAppImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of FlavorizrApp
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -487,13 +458,11 @@ class _$FlavorizrAppImpl extends _FlavorizrApp {
             (identical(other.name, name) || other.name == name));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, name);
 
-  /// Create a copy of FlavorizrApp
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$FlavorizrAppImplCopyWith<_$FlavorizrAppImpl> get copyWith =>
@@ -573,11 +542,8 @@ abstract class _FlavorizrApp extends FlavorizrApp {
 
   @override
   String get name;
-
-  /// Create a copy of FlavorizrApp
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$FlavorizrAppImplCopyWith<_$FlavorizrAppImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -622,13 +588,8 @@ mixin _$FlavorizrAndroid {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
-
-  /// Serializes this FlavorizrAndroid to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of FlavorizrAndroid
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $FlavorizrAndroidCopyWith<FlavorizrAndroid> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -652,8 +613,6 @@ class _$FlavorizrAndroidCopyWithImpl<$Res, $Val extends FlavorizrAndroid>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of FlavorizrAndroid
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -692,8 +651,6 @@ class __$$FlavorizrAndroidImplCopyWithImpl<$Res>
       $Res Function(_$FlavorizrAndroidImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of FlavorizrAndroid
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -743,13 +700,11 @@ class _$FlavorizrAndroidImpl extends _FlavorizrAndroid {
             (identical(other.icon, icon) || other.icon == icon));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, applicationId, icon);
 
-  /// Create a copy of FlavorizrAndroid
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$FlavorizrAndroidImplCopyWith<_$FlavorizrAndroidImpl> get copyWith =>
@@ -833,11 +788,8 @@ abstract class _FlavorizrAndroid extends FlavorizrAndroid {
   String get applicationId;
   @override
   String get icon;
-
-  /// Create a copy of FlavorizrAndroid
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$FlavorizrAndroidImplCopyWith<_$FlavorizrAndroidImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -890,13 +842,8 @@ mixin _$FlavorizrIos {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
-
-  /// Serializes this FlavorizrIos to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of FlavorizrIos
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $FlavorizrIosCopyWith<FlavorizrIos> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -923,8 +870,6 @@ class _$FlavorizrIosCopyWithImpl<$Res, $Val extends FlavorizrIos>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of FlavorizrIos
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -971,8 +916,6 @@ class __$$FlavorizrIosImplCopyWithImpl<$Res>
       _$FlavorizrIosImpl _value, $Res Function(_$FlavorizrIosImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of FlavorizrIos
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1039,14 +982,12 @@ class _$FlavorizrIosImpl extends _FlavorizrIos {
                 .equals(other._variables, _variables));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, bundleId, icon,
       const DeepCollectionEquality().hash(_variables));
 
-  /// Create a copy of FlavorizrIos
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$FlavorizrIosImplCopyWith<_$FlavorizrIosImpl> get copyWith =>
@@ -1139,11 +1080,8 @@ abstract class _FlavorizrIos extends FlavorizrIos {
   String get icon;
   @override
   Map<String, FlavorizrIosVariable> get variables;
-
-  /// Create a copy of FlavorizrIos
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$FlavorizrIosImplCopyWith<_$FlavorizrIosImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1187,13 +1125,8 @@ mixin _$FlavorizrIosVariable {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
-
-  /// Serializes this FlavorizrIosVariable to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of FlavorizrIosVariable
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $FlavorizrIosVariableCopyWith<FlavorizrIosVariable> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -1218,8 +1151,6 @@ class _$FlavorizrIosVariableCopyWithImpl<$Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of FlavorizrIosVariable
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1253,8 +1184,6 @@ class __$$FlavorizrIosVariableImplCopyWithImpl<$Res>
       $Res Function(_$FlavorizrIosVariableImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of FlavorizrIosVariable
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -1293,13 +1222,11 @@ class _$FlavorizrIosVariableImpl extends _FlavorizrIosVariable {
             (identical(other.value, value) || other.value == value));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, value);
 
-  /// Create a copy of FlavorizrIosVariable
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$FlavorizrIosVariableImplCopyWith<_$FlavorizrIosVariableImpl>
@@ -1381,11 +1308,8 @@ abstract class _FlavorizrIosVariable extends FlavorizrIosVariable {
 
   @override
   String get value;
-
-  /// Create a copy of FlavorizrIosVariable
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$FlavorizrIosVariableImplCopyWith<_$FlavorizrIosVariableImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
