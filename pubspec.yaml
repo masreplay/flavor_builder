@@ -9,18 +9,18 @@ funding: [https://github.com/sponsors/masreplay]
 topics: [flavor, flavorizr, flutter-native-splash, builder, generation]
 
 environment:
-  sdk: ">=3.1.5 <4.0.0"
+  sdk: ">=3.6.0 <4.0.0"
 
 dependencies:
-  freezed_annotation: ^2.4.4
+  freezed_annotation: ^3.0.0
   json2yaml: ^3.0.1
   json_annotation: ^4.9.0
   recase: ^4.1.0
 
 dev_dependencies:
-  lints: ^4.0.0
-  test: ^1.24.0
+  lints: ^5.1.1
+  test: ^1.25.15
 
-  build_runner: ^2.4.9
-  freezed: ^2.5.2
-  json_serializable: ^6.8.0
+  build_runner: ^2.4.15
+  freezed: ^3.0.4
+  json_serializable: ^6.9.4
